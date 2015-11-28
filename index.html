@@ -6,12 +6,33 @@
 </head>
 <svg width="200px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
-  <path d="M 125 125
-  C 100 160 100 160 75 125
+  <path class="heart" d="M 125 125
+  C 100 170 100 170 75 125
   S 75 50 100 75
-  C 125 50 150 90  125 125
+  C 125 50 150 80  125 125
   Z
-  " fill="transparent" stroke="black"/>
+  " fill="transparent" stroke="pink" stroke-dasharray="300.0 300.0"
+  stroke-dashoffset="300.00"/>
 
 
 </svg>
+
+<style>
+@keyframes spin {
+	50% {
+    fill: transparent;
+		stroke-dashoffset: 0;
+	}
+  100% {
+    stroke-dashoffset: 0;
+    fill: #FF0000
+  }
+}
+
+.heart {
+
+	stroke-width: 2;
+	stroke-linecap: round;
+	animation: spin 3s infinite linear;
+}
+</style>
