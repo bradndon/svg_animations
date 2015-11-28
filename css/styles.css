@@ -1,0 +1,96 @@
+@keyframes spin {
+	25% {
+    fill: transparent;
+		stroke-dashoffset: 0;
+	}
+  50% {
+    stroke: transparent;
+
+    stroke-dashoffset: 0;
+    fill: #D5393B;
+  }
+
+  70% {
+    fill: transparent;
+  }
+
+  100% {
+    stroke: transparent;
+    fill: transparent;
+  }
+
+}
+
+@keyframes pulse {
+  50% {
+    r: 10;
+    fill: transparent;
+
+  }
+   74% {
+     r: 200;
+     fill :#D5393B;
+   }
+
+   100% {
+     r: 200;
+     fill: transparent;
+   }
+}
+
+@keyframes pulse2 {
+  50% {
+    r: 10;
+    fill: transparent;
+
+  }
+   67% {
+     r: 200;
+     fill :#E06B6C;
+   }
+
+   100% {
+     r: 200;
+     fill: transparent;
+   }
+}
+
+@keyframes pulse3 {
+  50% {
+    r: 10;
+    fill: transparent;
+
+  }
+   62% {
+     r: 200;
+     fill :#EB9D9E;
+   }
+
+   100% {
+     r: 200;
+     fill: transparent;
+   }
+}
+
+.heart {
+  fill: transparent;
+  stroke: #F4CDCE;
+	stroke-width: 2;
+	stroke-linecap: round;
+	animation: spin 6s infinite linear;
+  stroke-dasharray: 300.0 300.0;
+  stroke-dashoffset: 300.00;
+}
+
+.pulse {
+  fill: transparent;
+  animation: pulse 6s infinite linear;
+}
+.pulse2 {
+  fill: transparent;
+  animation: pulse2 6s infinite linear;
+}
+.pulse3 {
+  fill: transparent;
+  animation: pulse3 6s infinite linear;
+}

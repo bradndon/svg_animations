@@ -1,38 +1,25 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/velocity.min.js"></script>
-<script src="js/animations.js"></script>
-
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<svg width="200px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="200px" height="220px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <circle class="pulse3" cx="100" cy="100" r="10" />
+  <circle class="pulse2" cx="100" cy="100" r="10" />
+
+  <circle class="pulse" cx="100" cy="100" r="10" />
+
+
 
   <path class="heart" d="M 125 125
   C 100 170 100 170 75 125
   S 75 50 100 75
   C 125 50 150 80  125 125
   Z
-  " fill="transparent" stroke="pink" stroke-dasharray="300.0 300.0"
-  stroke-dashoffset="300.00"/>
+  "  >
 
+
+
+  </path>
 
 </svg>
-
-<style>
-@keyframes spin {
-	50% {
-    fill: transparent;
-		stroke-dashoffset: 0;
-	}
-  100% {
-    stroke-dashoffset: 0;
-    fill: #FF0000
-  }
-}
-
-.heart {
-
-	stroke-width: 2;
-	stroke-linecap: round;
-	animation: spin 3s infinite linear;
-}
-</style>
