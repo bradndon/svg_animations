@@ -1,14 +1,24 @@
+body {
+	background: #EEEEEE;
+}
+
 @keyframes spin {
 	25% {
     fill: transparent;
+		transform: scale(1, 1);
+
 		stroke-dashoffset: 0;
 	}
   50% {
     stroke: transparent;
-
+		transform: scale(1.6, 1.6);
     stroke-dashoffset: 0;
     fill: #D5393B;
   }
+	60% {
+		transform: scale(0, 0);
+
+	}
 
   70% {
     fill: transparent;
@@ -72,6 +82,8 @@
    }
 }
 
+
+
 .heart {
   fill: transparent;
   stroke: #F4CDCE;
@@ -80,11 +92,13 @@
 	animation: spin 6s infinite linear;
   stroke-dasharray: 300.0 300.0;
   stroke-dashoffset: 300.00;
+	transform-origin: 100px 100px;
+
 }
 
 .pulse {
   fill: transparent;
-  animation: pulse 6s infinite linear;
+  animation: pulse 6s infinite ease-in;
 }
 .pulse2 {
   fill: transparent;
@@ -92,5 +106,9 @@
 }
 .pulse3 {
   fill: transparent;
-  animation: pulse3 6s infinite linear;
+  animation: pulse3 6s infinite ease-out;
+}
+
+.top-rect, .bottom-rect, .middle-rect {
+	transform-origin: 100px 100px;
 }
